@@ -28,8 +28,6 @@ class ShowPost extends Component
         if($this->row == $row)
         {
             $this->direction = $this->direction == 'desc' ? 'asc' : 'desc';
-            // if($this->direction == 'desc') $this->direction = 'asc';
-            // else $this->direction = 'desc';
         }
         else
         {

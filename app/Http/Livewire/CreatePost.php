@@ -33,7 +33,7 @@ class CreatePost extends Component
 
         $this->reset(['open', 'title', 'content']);
 
-        $this->emitTo('show-posts','render');
+        $this->emitTo('show-post','render');
 
         $this->emit('alert', 'El post se creo satisfactoriamente');
 
