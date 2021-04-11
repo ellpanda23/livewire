@@ -10,6 +10,8 @@ class ShowPost extends Component
 
     public $search, $row = 'id', $direction = 'desc';
 
+    protected $listeners = ['render']; // CUANDO ES IGUAL AL NOMBRE DEL METODO NO ES NECESARIO ESPECIFICAR
+
     public function render()
     {
         $posts = Post::where('title', 'like', '%' . $this->search . '%')
